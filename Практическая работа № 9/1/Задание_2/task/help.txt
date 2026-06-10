@@ -1,0 +1,13 @@
+1) Для передачи файла необходимо настроить поле MAX_FILE_SIZE.
+
+<input type="hidden" name="MAX_FILE_SIZE" value="270000"><p>
+
+2) Для вывода ошибки необходимо настроить отображение предупреждения UPLOAD_ERR_FORM_SIZE.
+
+case UPLOAD_ERR_FORM_SIZE:
+	echo "<h3>Размер загружаемого файла превысил значение MAX_FILE_SIZE, указанное в HTML-форме (код ошибки: 2)</h3>";
+	break;
+
+
+
+
